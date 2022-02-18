@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9262932.css",
+    "main.js": "/static/js/main.c1b4b501.js",
+    "static/js/787.3e6e5c3b.chunk.js": "/static/js/787.3e6e5c3b.chunk.js",
+    "static/media/croc.jpg": "/static/media/croc.30fd0f01eca15d0ed344.jpg",
+    "static/media/lagger.jpg": "/static/media/lagger.497a3b6d08114bcf0047.jpg",
+    "static/media/pahadi.jpg": "/static/media/pahadi.bc3ca5375e4d99e07af0.jpg",
+    "static/media/Game-Landing-Page-Vector-removebg-preview.png": "/static/media/Game-Landing-Page-Vector-removebg-preview.8e173b931a8d4859fb3a.png",
+    "static/media/BotxLogo-removebg-preview.png": "/static/media/BotxLogo-removebg-preview.53a911ed064868a0eb16.png",
+    "static/media/kakashi.jpg": "/static/media/kakashi.5aef9c0e09bcf1a40403.jpg",
+    "static/media/leo.png": "/static/media/leo.1606e1a8922ff944354d.png",
+    "index.html": "/index.html",
+    "main.d9262932.css.map": "/static/css/main.d9262932.css.map",
+    "main.c1b4b501.js.map": "/static/js/main.c1b4b501.js.map",
+    "787.3e6e5c3b.chunk.js.map": "/static/js/787.3e6e5c3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9262932.css",
+    "static/js/main.c1b4b501.js"
+  ]
+}
