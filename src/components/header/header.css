@@ -1,0 +1,184 @@
+._header{
+  
+    padding:2rem 6rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+._header-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-title{
+    margin: 20px 0;
+}
+.header-socialMedia{
+    min-width: 100%;
+    display:flex;
+    justify-content:space-around;
+    margin-top:90px;
+}
+.header-socialMedia>a{
+    margin:0 15px;
+}
+.header-socialMedia>a.instagram{
+    color:#D81D5A;
+}
+.header-socialMedia>a.discord{
+    color:#5562EA
+}
+.header-socialMedia>a.youtube{
+    color:#B71C1C
+}
+.header-socialMedia>a.facebook{
+    color:#38529A
+}
+.header-socialMedia>a.twitter{
+    color:#009DED
+}
+.header-socialMedia>a:hover,
+.header-socialMedia>a:focus,
+.header-socialMedia>a:active{
+    color:#fff;
+}
+.header-title{
+
+    font-size:3rem;
+    position:relative;
+    max-width: 100%;
+    color:#232839;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+.header-title::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right:2px solid #01fe87;
+    overflow:hidden;
+    animation:animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%{
+        width:100%;
+    }
+}
+.header-content{
+    color:white;
+    font-size: 3rem;
+  font-weight: 700;
+  max-width: 100%;
+  text-transform: uppercase;
+  position: relative;
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 500ms infinite;
+    margin-top:1rem;
+}
+.header-content span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .header-content span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8;
+  }
+  
+  .header-content span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8;
+  }
+  
+  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }
+  @media (max-width: 742px){
+      ._header{
+          padding: 0 1rem !important;
+          flex-direction: column-reverse ;
+      }
+      ._header-container{
+          align-items:flex-start;
+          justify-content:center;
+      }
+  }
+  @media(max-width:400px){
+    .header-socialMedia{
+      margin-top : 30px;
+      padding: 0 0 ;
+    }
+    ._header-image>img{
+      max-height: 30vh;
+
+    }
+  }
+  

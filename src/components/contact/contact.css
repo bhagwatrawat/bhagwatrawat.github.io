@@ -1,0 +1,77 @@
+._contact{
+    color:#fff;
+    margin:2rem 6rem;
+    padding: 20px;
+}
+._contact-title{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+._contact-title>div{
+    width:50px;
+    height:3px;
+    background-color:var(--color-subtext);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    margin-bottom:0.25rem;
+}
+._contact-form{
+    border: 1px solid skyblue;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ABB', endColorstr='#00FFEB', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+}
+._contact-form>*{
+    margin-bottom:20px;
+    width:250px;
+    height:2rem;
+}
+._contact-form>textarea{
+    height:4rem;
+}
+._contact-form>button{
+    margin-bottom: 0;
+    width:100px;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+._contact-form>button:hover,._contact-form>button:active{
+    box-shadow:
+    inset 20px 0 40px #f0f,  /* left magenta */
+    inset -20px 0 40px #0ff; /* right cyan */
+}
+.react-tel-input .form-control {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	height: 2rem !important;
+	width: 250px !important;
+	font-size: 0.9rem !important;
+    justify-content:center !important;
+}
+@media(max-width: 742px){
+    ._contact{
+        margin:2rem 1rem;
+    }
+}

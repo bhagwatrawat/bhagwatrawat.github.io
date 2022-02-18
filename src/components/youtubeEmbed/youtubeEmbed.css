@@ -1,0 +1,16 @@
+._youtubeEmbed{
+    
+   background:#BEA4FF;
+   padding:5px;
+   border-radius: 10px;
+   margin:20px;
+   align-items: center;
+}
+._youtubeEmbed-info{
+    color:var(--color-bg);
+    font-weight:600;
+    max-width:300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
