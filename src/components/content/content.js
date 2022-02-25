@@ -7,6 +7,15 @@ export default function Content() {
       <div className="_content-underline"/>
       <div className="_content-Header">Check Out Our Content</div>
        <div className="_content-container">
+       <YoutubeEmbed 
+         title="Welcome to Botx Esports"
+          creator="Botx Gaming"
+          embedId="tRPZtIb-qHg" />
+       <YoutubeEmbed 
+         title="The deadly duo"
+          creator="Botx Gaming"
+          embedId="DxY1mJ0f6uI" />
+           
          <YoutubeEmbed 
          title="FPP Tdm Montage"
           creator="LaggerBotx"
